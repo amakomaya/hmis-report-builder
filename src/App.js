@@ -386,14 +386,7 @@ const App = () => {
                             legendContents={legendContents}
                             legends={legends}
                         />
-
                     </div>
-
-                    <div style={{ position: 'absolute', bottom: 10, left: 0, textAlign: 'center', width: '100%' }}>
-                        <div style={{ fontSize: '10px', color: '#00000050' }}>HWCA / version: {process.env.REACT_APP_VERSION}</div>
-                    </div>
-
-
                 </div>
             </div>
             <div className='col-md-10'>

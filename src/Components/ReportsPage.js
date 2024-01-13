@@ -231,7 +231,7 @@ const ReportsPage = ({
                 <div className="mr-2">
                     <TbReport style={{ fontSize: "50px", color: "#06695C" }} />
                 </div>
-                <div style={{ fontSize: "24px" }} className='font-weight-bold'>Report Builder</div>
+                <div style={{ fontSize: "24px" }} className='font-weight-bold'>HMIS Report Builder</div>
             </div>
             <div style={{ padding: '10px' }}>
                 {
