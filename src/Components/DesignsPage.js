@@ -220,8 +220,6 @@ const DesignsPage = ({
         })
 
         const refreshCurrentReportContent = await loadDataStore(`REPORT_${currentRepport.id}`, null, null, {})
-        console.log("refreshCurrentReportContent: ", refreshCurrentReportContent)
-        debugger;
         payloadReportContent = {
           ...refreshCurrentReportContent,
           html: html_code,
