@@ -1,5 +1,5 @@
 {
-  "name": "hmis-report-builder",
+  "name": "hmis-e-card",
   "version": "1.0.0",
   "description": "",
   "license": "BSD-3-Clause",
@@ -33,8 +33,8 @@
     "uuid": "^8.3.2"
   },
   "manifest.webapp": {
-    "name": "hmis-ereport",
-    "description": "HMIS eReport App",
+    "name": "hmis-e-card",
+    "description": "HMIS eCard",
     "version": "1.9.9",
     "developer": {
       "url": "https://amakomaya.com",

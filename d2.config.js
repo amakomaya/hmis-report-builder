@@ -1,8 +1,8 @@
 const config = {
     type: 'app',
-    name: "hmis-ereport",
-    title: "HMIS-eReport",
-    description: "HMIS-eReport App",
+    name: "hmis-e-card",
+    title: "HMIS eCard",
+    description: "HMIS eCard",
     entryPoints: {
         app: './src/App.js',
     },
