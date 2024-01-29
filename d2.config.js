@@ -1,8 +1,8 @@
 const config = {
     type: 'app',
-    name: "hmis-report-builder",
-    title: "HMIS-Report Builder",
-    description: "HMIS-Report Builder App",
+    name: "hmis-ereport",
+    title: "HMIS-eReport",
+    description: "HMIS-eReport App",
     entryPoints: {
         app: './src/App.js',
     },

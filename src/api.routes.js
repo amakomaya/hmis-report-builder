@@ -28,7 +28,7 @@
 
 const FULL_ROUTE = "http://localhost:9999/api"
 
-export const APP_NAME = "hmis-report-builder"
+export const APP_NAME = "hmis-ereport"
 // export const API_BASE_ROUTE = FULL_ROUTE.substring(0, FULL_ROUTE.indexOf('/apps/'.concat(APP_NAME).concat('/')))
 export const SERVER_URL = FULL_ROUTE.substring(0, FULL_ROUTE.indexOf('/api/apps/'.concat(APP_NAME)))
 export const ORGANISATION_UNITS_ROUTE = FULL_ROUTE.concat('/organisationUnits.json?paging=false&fields=id,name,displayName,parent,level')
