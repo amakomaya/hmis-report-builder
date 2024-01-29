@@ -31,5 +31,20 @@
     "react-custom-scrollbars-2": "^4.5.0",
     "react-icons": "^4.4.0",
     "uuid": "^8.3.2"
+<<<<<<< HEAD
+=======
+  },
+  "manifest.webapp": {
+    "name": "hmis-ereport",
+    "description": "HMIS eReport App",
+    "version": "1.9.9",
+    "developer": {
+      "url": "https://hispwca.org",
+      "name": "HISP West & Central Africa ( HWCA) "
+    },
+    "icons": {
+      "48": "dhis2-app-icon.png"
+    }
+>>>>>>> origin/trackerFeature
   }
 }
