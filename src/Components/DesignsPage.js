@@ -171,6 +171,7 @@ const DesignsPage = ({
         initSummernote(currContent.html)
         setLoadingInitState(false)
         setSelectedProgram(currContent.selectedProgram)
+        setSelectedTrackerConfigDimensionsPrograms(currContent.selectedProgram);
         setSearchProperties(currContent.searchProperties)
       } else {
         setVisibleAddReport(false)
@@ -200,8 +201,9 @@ const DesignsPage = ({
 
       let payload = {}
       let payloadReportContent = {}
+
+      
       const refreshReportList = await loadDataStore(process.env.REACT_APP_REPORTS_KEY, null, null, [])
-      console.log("refreshReportList:", refreshReportList)
 
       if (editReport && currentRepport && currentRepportContent) {
 
@@ -219,11 +221,11 @@ const DesignsPage = ({
 
         const refreshCurrentReportContent = await loadDataStore(`REPORT_${currentRepport.id}`, null, null, {})
         console.log("refreshCurrentReportContent: ", refreshCurrentReportContent)
-
+        debugger;
         payloadReportContent = {
           ...refreshCurrentReportContent,
           html: html_code,
-          selectedProgram: selectedProgram,
+          selectedProgram: selectedTrackerConfigDimensionsPrograms,
           name: reportName,
           updatedAt: dayjs(),
           searchProperties
@@ -250,7 +252,7 @@ const DesignsPage = ({
           name: reportName,
           html: html_code,
           searchProperties,
-          selectedProgram: selectedProgram,
+          selectedProgram: selectedTrackerConfigDimensionsPrograms,
           createdAt: dayjs(),
           updatedAt: dayjs(),
         }
