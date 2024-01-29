@@ -132,7 +132,6 @@ const DesignsPage = ({
 
   const [loadingInitState, setLoadingInitState] = useState(false)
   const [loadingProcess, setLoadingProcess] = useState(false)
-
   const initSummernote = (existing_html) => {
     window.$(document).ready(function () {
       if (existing_html) {
@@ -172,6 +171,7 @@ const DesignsPage = ({
         setLoadingInitState(false)
         setSelectedProgram(currContent.selectedProgram)
         setSelectedTrackerConfigDimensionsPrograms(currContent.selectedProgram);
+        setSelectedConfigDimensionsAggregate(currContent.selectedProgram)
         setSearchProperties(currContent.searchProperties)
       } else {
         setVisibleAddReport(false)
@@ -223,7 +223,7 @@ const DesignsPage = ({
         payloadReportContent = {
           ...refreshCurrentReportContent,
           html: html_code,
-          selectedProgram: selectedTrackerConfigDimensionsPrograms,
+          selectedProgram: [...selectedTrackerConfigDimensionsPrograms, ...selectedConfigDimensionsAggregate],
           name: reportName,
           updatedAt: dayjs(),
           searchProperties
@@ -250,7 +250,7 @@ const DesignsPage = ({
           name: reportName,
           html: html_code,
           searchProperties,
-          selectedProgram: selectedTrackerConfigDimensionsPrograms,
+          selectedProgram: [...selectedTrackerConfigDimensionsPrograms, ...selectedConfigDimensionsAggregate],
           createdAt: dayjs(),
           updatedAt: dayjs(),
         }
@@ -1251,7 +1251,7 @@ const DesignsPage = ({
                     .filter(dim => dim.type === DATA_ELEMENT ?
                       searchInAllInput && searchInAllInput.trim().length > 0
                         ? dim.name.toLowerCase().includes(searchInAllInput.toLowerCase()) : true : false)
-                    .map(dimension => <div style={{ fontSize: "14px" }} className='my-dx' key={dimension.id} onClick={() => handleClickOnAggregateDimensionElement(dimension)}>{dimension?.name} </div>)}
+                    .map(dimension => <div style={{ fontSize: "14px" }} className='my-dx' key={dimension.id} onClick={() => handleClickOnAggregateDimensionElement(dimension)}>{dimension?.name} hello</div>)}
                 </div>
               )}
             </Scrollbars>
