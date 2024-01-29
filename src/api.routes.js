@@ -1,7 +1,7 @@
 const FULL_ROUTE = window.location.href
 
-export const APP_NAME = "hmis-e-card"
-// export const API_BASE_ROUTE = FULL_ROUTE.substring(0, FULL_ROUTE.indexOf('/apps/'.concat(APP_NAME).concat('/')))
+export const APP_NAME = "HMIS-eCard"
+export const API_BASE_ROUTE = FULL_ROUTE.substring(0, FULL_ROUTE.indexOf('/apps/'.concat(APP_NAME).concat('/')))
 export const SERVER_URL = FULL_ROUTE.substring(0, FULL_ROUTE.indexOf('/api/apps/'.concat(APP_NAME)))
 export const ORGANISATION_UNITS_ROUTE = API_BASE_ROUTE.concat('/organisationUnits.json?paging=false&fields=id,name,displayName,parent,level')
 export const SUPERVISORS_ROUTE = API_BASE_ROUTE.concat('/users.json')
